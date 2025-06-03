@@ -77,7 +77,7 @@ export default function ProductCard({ product }: ProductCardProps) {
             >
               購入する
             </button>
-            <span className="px-3 py-1 bg-gray-100 text-gray-500 rounded-md text-sm">
+            <span className="px-3 py-1 bg-green-100 text-gray-500 rounded-md text-sm">
               購入可能
             </span>
           </div>
