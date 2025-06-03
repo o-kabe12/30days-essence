@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState} from 'react';
-import { Product} from '../types';
+import { Product } from '../types';
 import { supabaseClientInstance } from "../lib/supabaseClient";
 import ProductCard from '../components/ProductCard';
 
