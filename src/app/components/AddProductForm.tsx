@@ -37,7 +37,6 @@ export default function AddProductForm({ onAdd }: { onAdd: () => void }) {
     if (error) {
       console.error("データの追加に失敗しました:", error.message);
     } else {
-      console.log("データが追加されました");
       setItem(productItem); // フォームをリセット
       onAdd(); // 成功時のみ呼ぶ
     }

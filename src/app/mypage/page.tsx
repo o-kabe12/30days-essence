@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState} from 'react';
-import { Product, canPurchase } from '../types';
+import { Product} from '../types';
 import { supabaseClientInstance } from "../lib/supabaseClient";
 import ProductCard from '../components/ProductCard';
 
@@ -122,11 +122,9 @@ export default function MyPage() {
         ) : (
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {filteredProducts.map(product => (
-              console.log(product),
               <ProductCard
                 key={product.id}
                 product={product}
-                // onUpdate={loadProducts}
               />
             ))}
           </div>
